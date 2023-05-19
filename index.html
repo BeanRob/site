@@ -22,24 +22,53 @@
             </h1>
 
             <hr/>
+            <p class="hl">
+                <b>!</b> This site is a constant work in progres. Please bear with me. <b>!</b><br/>
+            </p>
         </center>
+        <img src="scrungel.gif" style="float: right;"/>
         <p>
-            Hello, I am Bean. I like computers, baking, and maths.
+            Hello, I am Bean. I like computers, baking, and maths. I am a
+            British university student studying Mathematics & Computer Science.
         </p>
-        <p>
-            This site is a constant work in progres. Please bear with me.<br/>
-            <img src="scrungel.gif"/>
-        </p>
+        <P id="games">
+            I am enthusiastic about lots of video games, though my favourite is Guilty Gear.
+
+        <h3>Affiliations</h3>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/bollardsinparis/">Hub of Reputable Bollards</a>
+            </li>
+        </ul>
+
+        <h3>Creations</h3>
+        <ul>
+            <li>
+                <a href="https://github.com/BeanRob/site">This website</a>
+            </li>
+            <li>
+                <a href="https://github.com/smileyface12349/warwick-game-jam-2023">Train game</a>
+        </ul>
 
         <div id="botbar">
             <center>
                 <b>beanrob.com</b><br>
-                <a href="https://t.beanrob.com">tumblr</a>
+                &nbsp&nbsp<a href="https://t.beanrob.com">tumblr</a>&nbsp
                 |
-                <a href="https://github.com/beanrob">github</a>
+                &nbsp&nbsp<a href="https://github.com/beanrob">github</a>&nbsp
                 |
-                <a href="https://steamcommunity.com/id/Bean499">steam</a>&nbsp
+                &nbsp&nbsp<a href="https://steamcommunity.com/id/Bean499">steam</a>&nbsp&nbsp
+                |
+                <span class="link" id="discord">&nbspdiscord&nbsp</span>
             </center>
         </div>
     </body>
+    <script>
+document.getElementById("discord").addEventListener("mouseover", () => {
+    document.getElementById("discord").innerHTML = "Bean#1371";
+});
+document.getElementById("discord").addEventListener("mouseout", () => {
+    document.getElementById("discord").innerHTML = "&nbspdiscord&nbsp";
+});
+    </script>
 </html>

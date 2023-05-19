@@ -10,6 +10,7 @@ body {
     background: var(--bg);
     color: var(--fg);
     font-family: "monospace";
+    font-size: 20px;
 }
 
 .shaking {
@@ -48,6 +49,7 @@ body {
     width: calc(100%  + 8px);
     margin: 0 !important;
     transform: translate(-8px, 0);
+    border-top: 1px solid var(--alt-1);
 }
 
 a:link, .link {
@@ -61,4 +63,17 @@ a:visited {
 
 a:hover, .link:hover {
 	color: var(--alt-2);
+}
+
+ul {
+	list-style: none;
+}
+
+ul li:before {
+	content: '> ';
+	font-weight: bold;
+}
+
+.hl {
+    color: var(--alt-1);
 }
