@@ -6,6 +6,10 @@
     --alt-2:  #ffa500
 }
 
+hl {
+    color: var(--alt-2);
+}
+
 body {
     background: var(--bg);
     color: var(--fg);
@@ -43,6 +47,7 @@ body {
 }
 
 #botbar {
+    z-index: -1;
     position: fixed;
     bottom: 0;
     background: blue;
@@ -50,6 +55,13 @@ body {
     margin: 0 !important;
     transform: translate(-8px, 0);
     border-top: 1px solid var(--alt-1);
+}
+
+#fau {
+    position: fixed;
+    bottom: -109px;
+    left: 25vw;
+    height: 300px;
 }
 
 a:link, .link {
