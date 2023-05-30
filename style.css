@@ -14,7 +14,7 @@ body {
     background: var(--bg);
     color: var(--fg);
     font-family: "monospace";
-    font-size: 20px;
+    font-size: 2vh;
 }
 
 .shaking {
@@ -59,8 +59,8 @@ body {
 
 #fau {
     position: fixed;
-    bottom: -109px;
-    left: 25vw;
+    bottom: calc(-1 * 2 * 2.2vh - 67px);
+    left: 10vw;
     height: 300px;
 }
 
