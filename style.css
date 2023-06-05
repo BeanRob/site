@@ -6,16 +6,61 @@
     --alt-2:  #ffa500
 }
 
+@font-face {
+    font-family: "terminess";
+    src: url("./terminess.ttf");
+}
+
+
 hl {
     color: var(--alt-2);
 }
 
 body {
+    /*background-image: url("http://beanrob.com/cat.png");*/
     background: var(--bg);
     color: var(--fg);
-    font-family: "monospace";
+    font-family: "terminess";
     font-size: 20px;
+    margin: 0;
+}
+
+h2, h3, h4 {
+    display: flex;
+    align-items: center;
+}
+
+h2::after, h3::after, h4::after {
+    content: "";
+    flex: 1;
+    margin-left: 1rem;
+    height: 3px;
+    background: rgb(17,17,23);
+    background: linear-gradient(90deg, var(--alt-1) 0%, var(--alt-2) 100%);
+}
+
+img {
+    margin: 8px;
+    max-width: calc(100% - 16px);
+}
+
+h2::after {
+    height: 3px;
+}
+
+h3::after {
+    height: 2px;
+}
+
+h4::after {
+    height: 1px;
+}
+
+#main {
+    /*background: rgba(0, 0, 60, 0.5);*/
     width: 50%;
+    height: 100%;
+    padding: 8px;
     margin: auto;
 }
 
@@ -55,7 +100,6 @@ body {
     background: blue;
     width: 100%;
     margin: 0 !important;
-    transform: translate(-8px, 0);
     border-top: 1px solid var(--alt-1);
     right: 0;
 }
@@ -91,4 +135,13 @@ ul li:before {
 
 .hl {
     color: var(--alt-1);
+}
+
+@media screen and (max-width: 900px) {
+    #main {
+        width: 95%;
+    }
+    img {
+        float: none !important;
+    }
 }
