@@ -2,13 +2,13 @@
     --bg:     #002d7f;
     --bg-alt: #005aff;
     --fg:     #f2f8de;
-    --alt-1:  #ffdb99;
+    --alt-1:  #c5af65;
     --alt-2:  #ffa500
 }
 
 @font-face {
-    font-family: "terminess";
-    src: url("./terminess.ttf");
+    font-family: "terminus";
+    src: url("./terminus.ttf");
 }
 
 
@@ -20,7 +20,7 @@ body {
     /*background-image: url("http://beanrob.com/cat.png");*/
     background: var(--bg);
     color: var(--fg);
-    font-family: "terminess";
+    font-family: "terminus", "monospace";
     font-size: 20px;
     margin: 0;
 }
